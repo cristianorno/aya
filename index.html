@@ -31,11 +31,15 @@
             padding: 0;
         }
 
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             background: var(--bg-gradient);
             color: var(--text-primary);
             font-family: 'Cairo', 'Poppins', sans-serif;
-            overflow-x: hidden;
             min-height: 100vh;
             background-attachment: fixed;
             scroll-behavior: smooth;
@@ -436,7 +440,6 @@
         }
         
         .skip-link:focus {
-            left: 10px;
             top: 10px;
         }
         
@@ -617,7 +620,7 @@
             }
             
             #main-container {
-                padding: 15px 15px 100px 15px;
+                padding: 15px 15px 140px 15px;
             }
             
             header h1 {
@@ -738,8 +741,7 @@
     <audio id="bg-music" loop>
         <source src="song.mp3" type="audio/mpeg">
     </audio>
-    
-    <a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px 12px; background: var(--primary); color: white; border-radius: 4px;">تخطي إلى المحتوى الرئيسي</a>
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -9999px; left: 50%; transform: translateX(-50%); z-index: 999; padding: 8px 12px; background: var(--primary); color: white; border-radius: 4px;">تخطي إلى المحتوى الرئيسي</a>
 
     <div id="welcome-screen">
         <h1>✨ عالم مخصص لعسليتى ✨</h1>
